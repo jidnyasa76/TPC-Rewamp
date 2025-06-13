@@ -95,9 +95,9 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-medium text-white">Address</h4>
                     <p className="mt-1 text-gray-300">
-                      Training & Placement Cell<br />
-                      University Campus, Main Building<br />
-                      City, State - 123456
+                      Pillai College of Engineering, New Panvel, Dr. K.M.V.<br />
+                       Pillai Campus, Plot No. 10, Sec. 16, Triveni Society, <br />
+                       Navi Mumbai, Maharashtra 410206
                     </p>
                   </div>
                 </div>
@@ -107,8 +107,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-white">Phone</h4>
-                    <p className="mt-1 text-gray-300">+91 98765 43210</p>
-                    <p className="mt-1 text-gray-300">+91 12345 67890</p>
+                    <p className="mt-1 text-gray-300">+022-27456100 / 27482400</p>
+                  
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -117,8 +117,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-white">Email</h4>
-                    <p className="mt-1 text-gray-300">placement@university.edu</p>
-                    <p className="mt-1 text-gray-300">tpo@university.edu</p>
+                    <p className="mt-1 text-gray-300">studenttpc@mes.ac.in</p>
+                    
                   </div>
                 </div>
               </div>
@@ -135,13 +135,13 @@ export default function Contact() {
             >
               <h4 className="mb-4 text-lg font-medium text-white">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/tpc.pce/" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-instagram text-2xl text-[#df2020] hover:text-emerald-400 duration-200"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/tpc.pce" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-facebook text-2xl text-[#125bd9] hover:text-emerald-400 duration-200"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/tpc-pce" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-linkedin text-2xl text-[#206497] hover:text-emerald-400 duration-200"></i>
                 </a>
               </div>

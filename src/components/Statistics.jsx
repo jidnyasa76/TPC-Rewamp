@@ -135,7 +135,7 @@ const Statistics = () => {
     {
       title: "Students Placed",
       description:
-        "Pillai College of Engineering is well-known for the number of students placed at the tech firms in Navi Mumbai...",
+        "Pillai College of Engineering continues to uphold a strong placement record, with noticeable trends across the years, as shown in the adjacent graph. The highest placement count was recorded in 2021, with nearly 425 students securing job offers. 2019 and 2020 also reflected solid performance, each crossing the 250 mark. While 2024 experienced a temporary dip, 2025 has shown a positive rise again, exceeding 220 students and still counting. This upward momentum showcases the institute’s consistent efforts in preparing students for recruitment, ensuring they are ready to enter the corporate world through academic excellence, soft skills, and extracurricular achievements.",
       chart: (
         <BarChart data={placedStudentsData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#333" />
@@ -177,7 +177,7 @@ const Statistics = () => {
     {
       title: "Highest Package",
       description:
-        "In the year 2020, which was the year of the pandemic, Pillai College of Engineering broke the record...",
+        "The graph of the highest placement packages at Pillai College of Engineering from 2019 to 2025 highlights a remarkable upward trend, especially in the current year. After maintaining steady figures around 8 to 14 LPA in previous years, 2025 has witnessed an outstanding and record-breaking package of 32 LPA, the highest ever achieved by the college. This significant achievement demonstrates the growing recognition of Pillai College of Engineering among top recruiters but also reflects the institution’s commitment to enhancing student opportunities and industry partnerships. The outstanding placement results in 2025 highlight the college’s academic excellence and the growing demand for its graduates in today’s competitive job market.",
       chart: (
         <LineChart data={highestPackageData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#333" />
@@ -223,7 +223,7 @@ const Statistics = () => {
     {
       title: "Companies Visited",
       description:
-        "Over the years, many high-tech firms, including Infosys, Amazon, Reliance Jio...",
+        "The recruitment process at Pillai College of Engineering has seen impressive engagement from reputed companies over the years. In 2019 and 2021, the number of companies visiting the campus peaked, hosting over 140 tech firms. Even during challenging times, such as 2020 and 2022, the campus maintained strong industry connections, welcoming over 116 companies. Although 2023 showed a slight dip, with nearly 102 visitors, the number of companies visiting in 2024 and 2025 is gradually stabilising. This consistent interest from top recruiters highlights the institute's growing industry reputation, credibility in the job market and its sustained efforts in building strong ties with top-tier companies.",
       chart: (
         <BarChart data={companiesVisitedData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#333" />

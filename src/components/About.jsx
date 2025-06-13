@@ -33,7 +33,7 @@ const AboutSection = () => {
             <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-100 transition-transform duration-300 origin-center mt-2"></span>
           </h2>
           <p className="text-white font-poppins max-w-3xl mx-auto text-sm sm:text-base mt-4">
-            Our dedicated team works tirelessly to prepare students for industry challenges and connect them with leading recruiters.
+            A team committed and focused on making students industry-ready, helping them shine and connect with top recruiters.
           </p>
         </motion.div>
 
@@ -62,7 +62,7 @@ const AboutSection = () => {
             </h3>
             <div className="w-16 h-1 bg-green-500 mb-4"></div>
             <p className="text-white font-poppins mb-6 leading-relaxed text-sm sm:text-base">
-              The Training and Placement Committee is dedicated to bridging the gap between academia and industry. We prepare students for successful careers by providing comprehensive training, industry exposure, and placement opportunities.
+              The Training and Placement Committee is to empower students to become industry-ready professionals. We strive to bridge the gap between academia and the corporate world by providing structured training, industry collaboration, and strategic placement opportunities.
             </p>
 
             <div className="space-y-4">
@@ -70,12 +70,12 @@ const AboutSection = () => {
                 {
                   icon: <Star size={18} className="text-green-500" />,
                   title: "Industry Connections",
-                  desc: "Building strong relationships with top companies to provide excellent placement opportunities.",
+                  desc: "We connect students with top companies to ensure real-world exposure and industry-aligned placement opportunities.",
                 },
                 {
                   icon: <Book size={18} className="text-green-500" />,
                   title: "Career Development",
-                  desc: "Offering workshops, training sessions, and mentorship to enhance employability skills.",
+                  desc: "We enhance student potential through focused technical training and soft skill development for career readiness.",
                 },
               ].map((item, idx) => (
                 <motion.div key={idx} className="flex items-start" {...fadeIn(0.4 + idx * 0.1)}>
@@ -125,7 +125,7 @@ const AboutSection = () => {
                   </>
                 ) : (
                   <video
-                    src="/Video.mp4"
+                    src=""
                     autoPlay
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover"
@@ -142,12 +142,12 @@ const AboutSection = () => {
             {
               icon: <Eye className="text-green-500 mr-2" size={24} />,
               title: "Our Vision",
-              text: "To be recognized as a premier Training & Placement Cell that transforms students into industry-ready professionals through comprehensive skill development and strategic industry collaborations.",
+              text: "To nurture student potential and prepare them for global careers, ensuring every PCE graduate leaves with a degree, confidence, skills, and industry-ready guidance.",
             },
             {
               icon: <Activity className="text-green-500 mr-2" size={24} />,
               title: "Our Approach",
-              text: "We follow a comprehensive approach to student development, focusing on technical skills, soft skills, and industry awareness. Our goal is to make students not just employable, but exceptional professionals who can thrive in their careers.",
+              text: "We empower students through career-focused training, industry connections, skill enhancement, and personalized mentoring, ensuring they are well-prepared for professional careers.",
             },
           ].map(({ icon, title, text }, index) => (
             <motion.div key={index} {...fadeIn(0.2 + index * 0.2)}>

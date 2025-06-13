@@ -14,24 +14,31 @@ function Home() {
 
   const testimonials = [
     {
-      quote: 'TPC is responsible for assisting students in their placement pursuits. We train students for every challenge at the placements.',
-      name: 'Rahul Sharma',
-      title: 'Software Engineer, Flipkart',
+      quote: 'I am grateful to TPC for mock tests, workshops, and training that boosted my skills and confidence for quality placements.',
+      name: 'Srushti Jagtap ',
+      title: 'Flipkart',
       batch: 'Batch of 2023',
       image: "/Pillai.png",
     },
     {
-      quote: 'TPC facilitates the placement process. We ensure that the company has hassle-free proceedings during the placement drive.',
-      name: 'Priya Mehta',
-      title: 'Analyst, Accenture',
-      batch: 'Batch of 2023',
+      quote: 'The TPC at PCE transformed my anxious beginning into a confident journey with structured sessions and continuous mentorship.',
+      name: 'Sumant Dusane ',
+      title: 'Grexa Al PVT LTD',
+      batch: 'COMPS',
       image: "/Pillai.png",
     },
     {
-      quote: 'TPC is a nexus between Students and the Placement Cell. We assist the Cell in placement-related activities.',
-      name: 'Aman Verma',
-      title: 'Data Analyst, Capgemini',
-      batch: 'Batch of 2023',
+      quote: 'Thanks to TPC-PCE, the transition to the corporate world was smooth with valuable sessions, mentorship, and placement drives.',
+      name: 'Sayali Patil',
+      title: 'TCS',
+      batch: 'COMPS',
+      image: "/Pillai.png",
+    },
+    {
+      quote: 'TPC nurtured my growth with training, support, and consistency, making me industry-ready.',
+      name: 'Pranav Rajeevan ',
+      title: 'TCS',
+      batch: 'IT',
       image: "/Pillai.png",
     },
   ];
@@ -78,22 +85,25 @@ function Home() {
             <span className="text-green-400">🔗</span> Connecting Talent with Opportunities
           </motion.p>
 
-          <motion.h1
-            className="text-white text-4xl sm:text-4xl md:text-5xl font-bold mb-4 z-20"
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            Training & Placement <span className="text-green-500">Committee PCE</span>
-          </motion.h1>
+         <motion.h1
+  className="text-white text-4xl sm:text-4xl md:text-5xl font-bold mb-4 z-20 drop-shadow-[3px_3px_0px_rgba(0,0,0,0.7)]"
+  initial={{ y: 30, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.4 }}
+>
+  <span className="block sm:inline">Training & Placement</span>
+  <span className="block sm:inline text-green-500"> Committee PCE</span>
+</motion.h1>
+
+
 
           <motion.p
-            className="text-gray-200 text-lg sm:text-base max-w-2xl mb-6 mt-6 z-20"
+            className="text-base sm:text-2xl md:text-3xl text-gray-200 max-w-2xl mb-6 mt-6 z-20 uppercase drop-shadow-lg font-bold"
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-           Connecting students to top employers and shaping successful careers.
+           		unlocking potential, building career
           </motion.p>
         </motion.div>
       </section>
@@ -213,19 +223,19 @@ function Home() {
         company: "CAPGEMINI",
         logo: "/logos/capgemini.jpg",
         quote:
-          "We were thoroughly impressed with the preparation and professionalism of the students. PCE's TPC team made the recruitment process seamless.",
+          "Candidates from PCE show great enthusiasm, clear communication, and strong analytical thinking. It reflects the college's solid academic and training standards.",
       },
       {
         company: "GODEREJ",
         logo: "/logos/GODEREJ.png",
         quote:
-          "The students from PCE had excellent technical skills and communication. It was a great hiring experience.",
+          "The recruits from PCE are well-trained and skilled professionals. Their performance is commendable and well-aligned with industry expectations.",
       },
       {
         company: "TCS",
         logo: "/logos/TCS.png",
         quote:
-          "Very cooperative placement team. The students were highly trained and industry-ready.",
+          "PCE students exhibit professionalism, problem-solving skills, and strong teamwork. We value our association with the institute for consistently providing quality talent.",
       },
     ];
 
@@ -275,7 +285,7 @@ function Home() {
                 <span className="text-[#09c35a] text-5xl absolute -left-4 top-2 select-none font-serif">
                   &#8220;
                 </span>
-                <p className="italic text-white text-sm leading-relaxed text-justify [text-justify:inter-word] relative z-10 py-4 px-2">
+                <p className="italic text-white text-sm leading-relaxed text-center  relative z-10 py-4 px-2">
                   {testimonial.quote}
                 </p>
                 <span
@@ -325,7 +335,7 @@ function Home() {
                     <span className="text-[#09c35a] text-5xl absolute -left-4 top-2 select-none font-serif">
                       &#8220;
                     </span>
-                    <p className="italic text-white text-sm leading-relaxed text-justify [text-justify:inter-word] relative z-10 py-4 px-2">
+                    <p className="italic text-white text-sm leading-relaxed text-center relative z-10 py-4 px-2">
                       {testimonial.quote}
                     </p>
                     <span
@@ -391,7 +401,7 @@ function Home() {
         &#8220;
       </span>
 
-      <p className="italic text-gray-200 text-lg sm:text-xl leading-relaxed z-10 relative">
+      <p className="italic text-gray-200 text-xs sm:text-sm leading-relaxed z-10 relative">
         {testimonial.quote}
       </p>
 

@@ -13,12 +13,12 @@ const fadeIn = (delay = 0) => ({
 });
 
 const events = [
-  { id: 1, name: "Mock Placement", description: "Join industry leaders for cutting-edge technology discussions and networking opportunities.", image: "/Pillai.png" },
-  { id: 2, name: "Inspiria", description: "Explore sustainable energy solutions and environmental innovations for a better future.", image: "/Pillai.png" },
-  { id: 3, name: "TIA Expo", description: "Discover the latest trends in digital marketing and social media strategies.", image: "/Pillai.png" },
-  { id: 4, name: "Education Fair", description: "Hands-on workshop covering artificial intelligence and machine learning fundamentals.", image: "/Pillai.png" },
-  { id: 5, name: "Job Fair", description: "Watch innovative startups pitch their ideas to investors and industry experts.", image: "/Pillai.png" },
-  { id: 6, name: "Cybersecurity Summit", description: "Learn about the latest cybersecurity threats and protection strategies.", image: "/Pillai.png" },
+  { id: 1, name: "Mock Placement", description: "Mock Placements 2025, organized by the Training and Placement Committee of PCE, offered third-year students a real-time simulation of campus recruitment. Through aptitude tests, technical rounds, group discussions, and mock interviews, enhanced placement readiness for students.  It concluded with rewards for top performers, boosting student confidence and preparation for future opportunities.", image: "/Pillai.png" },
+  { id: 2, name: "Inspiria", description: "Inspiria 4.0, the flagship event of TPC-PCE, provided a powerful platform to bridge academics with industry insights. Day 1 featured Professor Dinesh Kumar Gupta, who emphasised holistic growth and corporate readiness. Day 2 featured Mr. Gaurav Sharma and Mr. Aryan Singh, who provided sessions on cybersecurity and entrepreneurship, which inspired students to upskill, innovate, and confidently shape their professional paths.", image: "/Pillai.png" },
+  { id: 3, name: "TIA Expo", description: "The TIA Expo, organised by the Taloja Main Office with us as Knowledge Partners, aimed to promote companies' marketing strategies. Startups and Industrialists of MIDC and Taloja set up booths while we volunteered as anchors, managers, and support staff. Newly elected cabinet ministers were the special guests. Along with officials from central, state, and local authorities. It was the 4th consecutive year of the expo, and a key highlight was the presence of newly elected cabinet ministers.", image: "/Pillai.png" },
+  { id: 4, name: "Education Fair", description: "The Education Fair 2025 was a two-day celebration of innovation, learning, and academic excellence, featuring 30 stalls showcasing student projects, research, and departmental innovations. The event promoted academic excellence, interdisciplinary learning, and industry awareness. It offered a vibrant platform for collaboration, curiosity, and real-world application.", image: "/Pillai.png" },
+  { id: 5, name: "Job Fair", description: "The Job Fair 2024, organized by Pillai College, brought together 58 companies and startups, creating valuable career opportunities for final-year students. It enabled direct interaction with industry professionals and insights into emerging roles and technologies. The event successfully fostered recruitment, networking, and real-world exposure.", image: "/Pillai.png" },
+  { id: 6, name: "Cybersecurity Summit", description: "PCE organized a boot camp on “Cyber Security: Safeguarding the Digital Future with AI” in collaboration with ISEA Phase-III, for UG and PG students from Engineering and Science backgrounds. The event provided hands-on training in Web Application Pentesting, AI-driven security tools, and the CTF (Capture The Flag) challenge, along with informative sessions by eminent speakers from IITs and top industries.", image: "/Pillai.png" },
 ];
 
 const yearlyEvents = [
@@ -67,7 +67,7 @@ const EventsSection = () => {
                 </CardHeader>
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold text-green-400 mb-2">{event.name}</h4>
-                  <p className="text-sm text-gray-300">{event.description}</p>
+                  <p className="text-sm text-gray-300 text-justify">{event.description}</p>
                 </CardContent>
               </Card>
             </motion.div>

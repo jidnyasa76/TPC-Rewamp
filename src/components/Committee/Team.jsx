@@ -8,7 +8,7 @@ const facultyCoordinators = [
     role: "Training and Placement Officer",
     image: "/Pillai.png",
     message:
-      "Pillai College of Engineering is where thinkers become leaders. As pioneers in technical education, we focus on industry-ready grooming and holistic student development. Our placement cell supports companies throughout the recruitment process, helping match top talent with the right opportunities for mutual success.",
+      "Dr. Prashant Lokhande is the Head and Professor of the Training and Placement Cell at Pillai College of Engineering (TPC-PCE). With a strong dedication to academic excellence and professional development, he spearheads initiatives that connect students with industry opportunities. Under his leadership, the Placement Cell ensures holistic student development by enhancing their technical and soft skills, aligning them with current industry standards. His vision reflects a strong focus on nurturing talent, supporting recruitment processes, and building lasting partnerships with leading organisations.",
     linkedin: "https://www.linkedin.com/in/prashantlokhande",
   },
   {
@@ -61,7 +61,11 @@ export default function Team() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-poppins text-white drop-shadow-md group inline-block">
             Our <span className="text-green-500">Team</span>
             <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-100 transition-transform duration-300 origin-center mt-2"></span>
+             
           </h2>
+          <p className="text-white font-poppins max-w-3xl mx-auto text-sm sm:text-base mt-6">
+              United by vision, driven by mutual support.
+            </p>
         </motion.div>
 
         {/* Tabs */}

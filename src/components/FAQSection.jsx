@@ -9,28 +9,28 @@ import { HelpCircle } from "lucide-react";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "How can I register for placement assistance?",
-      answer: "Students can register for placement assistance by filling out the registration form available on the student portal. Make sure to complete your profile with all the required information including academic details, skills, and projects."
+      question: "What is TPC-PCE, and what role does it play at Pillai College of Engineering?",
+      answer: "TPC-PCE is the Training and Placement Committee of Pillai College of Engineering. It is committed to acting as a bridge between students and the corporate world. It is responsible for organising placement drives, training programs, and career-oriented events that prepare students for professional success."
     },
     {
-      question: "What is the placement process?",
-      answer: "The placement process typically involves registration, pre-placement talks, aptitude tests, technical interviews, HR interviews, and finally job offers. The T&P cell guides students through each step and provides necessary resources for preparation."
+      question: "What are the main objectives and vision of TPC-PCE?",
+      answer: "The primary objective of TPC-PCE is to ensure every student is industry-ready by the time they graduate. With a vision to align academic knowledge with corporate requirements, TPC-PCE focuses on soft skills, technical training, interview preparation, and industry exposure through continuous interaction with recruiters and alumni."
     },
     {
-      question: "When does the placement season begin?",
-      answer: "The placement season usually begins in the month of July/August for final-year students. However, internship drives for pre-final year students may begin earlier. The exact schedule is announced at the beginning of each academic year."
+      question: "What kind of training and development programs are conducted by TPC-PCE?",
+      answer: "TPC-PCE conducts various training programs throughout the academic year, including aptitude training, mock interviews, resume and LinkedIn workshops, technical skill sessions, and expert talks. These initiatives strive to improve technical and soft skills, increase student confidence and prepare them for industry demands."
     },
     {
-      question: "What kind of companies visit for recruitment?",
+      question: "How does TPC-PCE coordinate with companies during placement drives?",
       answer: "We host companies from various sectors including IT, finance, consulting, manufacturing, analytics, and more. The companies range from startups to multinational corporations offering diverse roles and packages."
     },
     {
       question: "How can I prepare for placements?",
-      answer: "The Training and Placement Cell organizes various workshops, mock interviews, aptitude training sessions, and resume building workshops. Additionally, we provide access to online resources and previous placement papers to help students prepare effectively."
+      answer: "TPC-PCE serves as a bridge between recruiters and students, managing pre-placement talks, schedules, and communication. The team ensures smooth coordination and professional assistance during campus visits and handles all logistics to provide a seamless placement experience for companies and students."
     },
     {
-      question: "How do I join TPC-PCE?",
-      answer: "Every year we conduct interviews for second-year students. You can register for those, and then there’s a chance you may get selected and become a part of TPC-PCE."
+      question: "How can students become a part of TPC-PCE? What are the benefits?",
+      answer: "TPC-PCE recruits second-year students through a structured selection process involving registration, interviews, and skill assessments. Being a member of the committee offers numerous benefits, including improved leadership and communication skills, networking opportunities with companies and alumni, hands-on experience in events, and valuable exposure that strengthens your resume."
     }
   ];
 
