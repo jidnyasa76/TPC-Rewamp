@@ -89,50 +89,48 @@ export default function Placement() {
           </TabsList>
 
           {/* Recruiters Tab */}
-          <TabsContent
-            value="companies"
-            className="space-y-6 sm:space-y-8 border-0 bg-gray-800/20 px-4 sm:px-10 rounded-3xl"
-          >
-            <motion.div
-              className="text-center mb-6 sm:mb-10 px-2 sm:px-0"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <h2 className="text-2xl sm:text-3xl font-bold text-green-500 mb-2 sm:mb-4">
-                Trusted Industry<span className="text-white"> Partners</span>
-              </h2>
-              <p className="text-sm sm:text-base text-white max-w-xl sm:max-w-3xl mx-auto">
-                We collaborate with leading companies across various industries to provide exceptional career opportunities for our students
-              </p>
-            </motion.div>
+         <TabsContent
+  value="companies"
+  className="space-y-6 sm:space-y-8 border-0 bg-gray-800/20 px-4 sm:px-10 rounded-3xl"
+>
+  <motion.div
+    className="text-center mb-6 sm:mb-10 px-2 sm:px-0"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeInUp}
+  >
+    <h2 className="text-2xl sm:text-3xl font-bold text-green-500 mb-2 sm:mb-4">
+      Trusted Industry<span className="text-white"> Partners</span>
+    </h2>
+    <p className="text-sm sm:text-base text-white max-w-xl sm:max-w-3xl mx-auto">
+      We collaborate with leading companies across various industries to provide exceptional career opportunities for our students
+    </p>
+  </motion.div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 px-2 sm:px-10">
-              {Companylogos.map((logo, i) => (
-                <motion.div
-                  key={i}
-                  variants={getSlideVariant(isMobile)}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  custom={i}
-                >
-                  <Card className="p-2 hover:shadow-lg transition-shadow duration-300 border-0">
-                    <div className="flex items-center justify-center p-2 h-20 mb-2">
-                      <img
-                        src={logo.image}
-                        alt={logo.alt || `Company ${i + 1} Logo`}
-                        width={120}
-                        height={80}
-                        className="max-w-full object-contain hover:opacity-100 transition-opacity"
-                      />
-                    </div>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </TabsContent>
+  <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 px-2 sm:px-10">
+    {Companylogos.map((logo, i) => (
+      <motion.div
+        key={i}
+        variants={getSlideVariant(isMobile)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={i}
+      >
+        <Card className="bg-white h-[120px] flex items-center justify-center p-2 shadow-md rounded-md transition-shadow duration-300 hover:shadow-lg">
+          <img
+            src={logo.image}
+            alt={logo.alt || `Company ${i + 1} Logo`}
+            className="w-[110px] h-[70px] object-contain"
+          />
+        </Card>
+      </motion.div>
+    ))}
+  </div>
+</TabsContent>
+
+
 
           {/* Brochure Tab */}
           <TabsContent

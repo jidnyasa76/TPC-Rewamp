@@ -56,14 +56,18 @@ const AboutSection = () => {
           </motion.div>
 
           <motion.div className="md:order-2 order-2" {...fadeIn(0.3)}>
-            <h3 className="text-xl sm:text-2xl font-poppins font-semibold mb-2 text-white flex items-center gap-2">
-              <Target className="text-green-500" size={24} />
-              <span>Our </span><span className="text-green-500">Mission</span>
-            </h3>
-            <div className="w-16 h-1 bg-green-500 mb-4"></div>
-            <p className="text-white font-poppins mb-6 leading-relaxed text-sm sm:text-base">
-              The Training and Placement Committee is to empower students to become industry-ready professionals. We strive to bridge the gap between academia and the corporate world by providing structured training, industry collaboration, and strategic placement opportunities.
-            </p>
+            <div className="inline-block">
+  <h3 className="text-xl sm:text-2xl font-poppins font-semibold mb-2 text-white flex items-center gap-2">
+    <Target className="text-green-500" size={24} />
+    <span>Our</span>
+    <span className="text-green-500">Mission</span>
+  </h3>
+  <div className="w-24 h-1 bg-green-500 mb-6 ml-12"></div>
+</div>
+
+          <p className="text-white font-poppins mb-6 leading-relaxed text-sm sm:text-base text-justify sm:text-center">
+  The Training and Placement Committee is to empower students to become industry-ready professionals. We strive to bridge the gap between academia and the corporate world by providing structured training, industry collaboration, and strategic placement opportunities.
+</p>
 
             <div className="space-y-4">
               {[
@@ -136,39 +140,50 @@ const AboutSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Vision & Approach Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 px-4 relative z-10">
-          {[
-            {
-              icon: <Eye className="text-green-500 mr-2" size={24} />,
-              title: "Our Vision",
-              text: "To nurture student potential and prepare them for global careers, ensuring every PCE graduate leaves with a degree, confidence, skills, and industry-ready guidance.",
-            },
-            {
-              icon: <Activity className="text-green-500 mr-2" size={24} />,
-              title: "Our Approach",
-              text: "We empower students through career-focused training, industry connections, skill enhancement, and personalized mentoring, ensuring they are well-prepared for professional careers.",
-            },
-          ].map(({ icon, title, text }, index) => (
-            <motion.div key={index} {...fadeIn(0.2 + index * 0.2)}>
-              <Card className="bg-[#0d0d0d] border border-gray-800 shadow-xl h-full flex flex-col">
-  <CardContent className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 px-4 relative z-10">
+  {/* Vision Card */}
+  <motion.div {...fadeIn(0.2)}>
+    <Card className="bg-[#0d0d0d] border border-gray-800 shadow-xl h-full flex flex-col">
+      <CardContent className="p-4 sm:p-8 flex-1 flex flex-col justify-between">
+        <div className="flex flex-col items-center md:items-start relative w-full">
+          <h3 className="text-xl sm:text-2xl font-semibold text-white font-poppins mb-2 mt-3 flex items-center gap-2 justify-center md:justify-start w-full max-w-max mx-auto md:mx-0">
+            <Eye className="text-green-500 mr-0 md:mr-2" size={24} />
+            <span className="relative inline-block text-center">
+              <span className="text-green-500">Our</span> Vision
+              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-20 h-1 bg-green-500" />
+            </span>
+          </h3>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white font-poppins mb-2 flex items-center mt-3">
-                    {icon}
-                    <span>
-                      <span className="text-green-500">{title.split(" ")[0]}</span> {title.split(" ").slice(1).join(" ")}
-                    </span>
-                  </h3>
-                  <div className="w-16 h-1 bg-green-500 mb-4"></div>
-                  <p className="text-white font-poppins leading-relaxed text-sm sm:text-base">
-                    {text}
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+          <p className="text-white font-poppins leading-relaxed text-sm sm:text-base mt-4 text-center md:text-left max-w-prose mx-auto md:mx-0">
+            To nurture student potential and prepare them for global careers, ensuring every PCE graduate leaves with a degree, confidence, skills, and industry-ready guidance.
+          </p>
         </div>
+      </CardContent>
+    </Card>
+  </motion.div>
+
+  {/* Approach Card */}
+  <motion.div {...fadeIn(0.4)}>
+    <Card className="bg-[#0d0d0d] border border-gray-800 shadow-xl h-full flex flex-col">
+      <CardContent className="p-4 sm:p-8 flex-1 flex flex-col justify-between">
+        <div className="flex flex-col items-center md:items-start relative w-full">
+          <h3 className="text-xl sm:text-2xl font-semibold text-white font-poppins mb-2 mt-3 flex items-center gap-2 justify-center md:justify-start w-full max-w-max mx-auto md:mx-0">
+            <Activity className="text-green-500 mr-0 md:mr-2" size={24} />
+            <span className="relative inline-block text-center">
+              <span className="text-green-500">Our</span> Approach
+              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-20 h-1 bg-green-500" />
+            </span>
+          </h3>
+
+          <p className="text-white font-poppins leading-relaxed text-sm sm:text-base mt-4 text-center md:text-left max-w-prose mx-auto md:mx-0">
+            We empower students through career-focused training, industry connections, skill enhancement, and personalized mentoring, ensuring they are well-prepared for professional careers.
+          </p>
+        </div>
+      </CardContent>
+    </Card>
+  </motion.div>
+</div>
+
       </div>
     </div>
   );
