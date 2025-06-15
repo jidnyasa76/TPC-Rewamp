@@ -102,7 +102,6 @@ const ScrollAnimatedSection = ({ children, variants, className }) => {
 
 const Statistics = () => {
   const placedStudentsData = [
-    { year: "2019", students: 285 },
     { year: "2020", students: 357 },
     { year: "2021", students: 425 },
     { year: "2022", students: 315 },
@@ -112,7 +111,6 @@ const Statistics = () => {
   ];
 
   const highestPackageData = [
-    { year: "2019", package: 10 },
     { year: "2020", package: 12 },
     { year: "2021", package: 9 },
     { year: "2022", package: 10 },
@@ -122,7 +120,6 @@ const Statistics = () => {
   ];
 
   const companiesVisitedData = [
-    { year: "2019", companies: 142 },
     { year: "2020", companies: 116 },
     { year: "2021", companies: 144 },
     { year: "2022", companies: 116 },
@@ -268,9 +265,9 @@ const Statistics = () => {
     <div className="py-12 md:py-24 w-full bg-black overflow-hidden relative ">
        <div className="w-screen px-4 relative z-10">
       {/* Background glows */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0"></div>
-      <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] max-w-[300px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
-      <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] max-w-[300px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-30 blur-[120px] pointer-events-none z-0"></div>
+      <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] max-w-[400px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] max-w-[400px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
 
       {/* Title and subtitle */}
       <motion.div className="text-center mb-16 px-4 mt-20 relative z-10" {...fadeInUp}>
@@ -307,7 +304,7 @@ const Statistics = () => {
                   className="block h-[2px] w-[60px] bg-green-500 mx-auto md:mx-0 mt-3 origin-center"
                 ></motion.span>
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed text-justify">
+              <p className="text-lg sm:text-sm md:text-base text-white/90 leading-relaxed text-justify">
                 {section.description}
               </p>
             </ScrollAnimatedSection>

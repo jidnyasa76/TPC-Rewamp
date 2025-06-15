@@ -33,7 +33,8 @@ const EventsSection = () => {
   return (
     <section id="events" className="w-full bg-black py-24 font-poppins relative">
       {/* Glowing background */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-20 blur-[100px] rounded-full z-0 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-30 blur-[100px] rounded-full z-0 pointer-events-none" />
+      
 
       <div className="w-screen px-4 relative z-10">
         {/* Main Heading */}
@@ -56,7 +57,7 @@ const EventsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {events.map((event, idx) => (
             <motion.div key={event.id} {...fadeIn(0.2 + idx * 0.1)}>
-              <Card className="bg-[#0d0d0d] border border-gray-800 hover:shadow-green-500/20 transition-shadow duration-300 h-full">
+              <Card className="bg-gradient-to-br from-gray-900/30 to-gray-800/30 backdrop-blur-sm border border-gray-800 hover:shadow-green-500/20 transition-shadow duration-300 h-full">
                 <CardHeader className="p-0">
                   <img
                     src={event.image}
@@ -75,7 +76,7 @@ const EventsSection = () => {
         </div>
 
         {/* 2nd Spotlight glow */}
-        <div className="absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
+        <div className="absolute top-[73%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
 
         {/* Yearly Events Heading */}
         <motion.div className="text-center mb-10" {...fadeIn(0.2)}>

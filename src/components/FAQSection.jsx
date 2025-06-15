@@ -38,8 +38,8 @@ const FAQSection = () => {
     <section id="faq" className="w-full bg-black overflow-hidden py-20 relative min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
            {/* Spotlight Background - Top */}
-        <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0"></div>
-        <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0"></div>
+       
+        <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[300px] rounded-full bg-green-500 opacity-25 blur-[120px] pointer-events-none z-0"></div>
         
         {/* Header */}
 

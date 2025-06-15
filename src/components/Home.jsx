@@ -18,7 +18,7 @@ function Home() {
       quote: 'I am grateful to TPC for mock tests, workshops, and training that boosted my skills and confidence for quality placements.',
       name: 'Srushti Jagtap ',
       title: 'Flipkart',
-      batch: ' ',
+      batch: 'ECS ',
       image: "/Pillai.png",
     },
     {
@@ -77,7 +77,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute w-[300px] h-[300px] bg-green-400 blur-[200px] rounded-full opacity-40 mix-blend-screen z-0 pointer-events-none" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+          <div className="absolute w-[300px] h-[400px] bg-green-400 blur-[100px] rounded-full opacity-20 mix-blend-screen z-0 pointer-events-none" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
 
           
 
@@ -105,7 +105,10 @@ function Home() {
       </section>
 
       {/* Placement Insights */}
-     <section className="py-24 w-full bg-black text-white">
+      <section className="py-24 w-full bg-black text-white relative overflow-hidden">
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-green-500 opacity-10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+    
+
     <motion.div
       className="max-w-screen-xl mx-auto px-6 text-center"
       initial={{ opacity: 0, y: 50 }}
@@ -118,6 +121,7 @@ function Home() {
         Placement <span className="text-green-500">Insights</span>
         <span className="block h-[3px] bg-green-500 mt-2 w-1/3 mx-auto rounded-full"></span>
       </h2>
+         
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         {[
@@ -128,7 +132,8 @@ function Home() {
         ].map((item, i) => (
           <motion.div
             key={i}
-            className="bg-[#060c14e8] p-10 shadow-lg rounded-lg backdrop-blur-sm"
+         className="bg-gradient-to-br from-gray-900/30 to-gray-800/30 p-10 shadow-lg rounded-lg backdrop-blur-sm border border-gray-800 opacity-90"
+
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -157,7 +162,7 @@ function Home() {
 
       {/* Recruiters Carousel */}
       <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-green-500 opacity-10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
         <motion.div
           className="text-center mb-10 relative z-10"
@@ -209,7 +214,7 @@ function Home() {
 {/* Company Testimonials */}
 
 <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
       <motion.div
         className="text-center mb-10"

@@ -42,6 +42,7 @@ export default function Placement() {
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0" />
       <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0" />
+    
 
       {/* Main Container */}
       <div className="w-screen px-4 relative z-10">

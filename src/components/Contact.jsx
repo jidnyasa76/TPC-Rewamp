@@ -15,7 +15,7 @@ export default function Contact() {
     <section id="contact" className="w-full bg-black overflow-hidden py-20 relative min-h-screen">
       <div className="w-screen px-4 relative z-10">
         {/* Spotlight Background - Top */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[120px] pointer-events-none z-0"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-30 blur-[120px] pointer-events-none z-0"></div>
 
         {/* Header */}
         <motion.div
@@ -79,6 +79,8 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <div>
+     
+
               <h3 className="mb-6 text-2xl font-semibold text-white">
                 Contact <span className="text-green-500">Information</span>
                 <div className="w-16 h-1 bg-green-500 mb-4"></div>

@@ -35,6 +35,22 @@ const facultyCoordinators = [
       "Training and placement cell of Pillai college of Engineering is the most active and crucial part of college...",
     linkedin: "https://www.linkedin.com/in/sunilmehta",
   },
+  {
+    name: "Dr. Sunil Mehta",
+    role: "Placement Officer",
+    image: "/Pillai.png",
+    message:
+      "Training and placement cell of Pillai college of Engineering is the most active and crucial part of college...",
+    linkedin: "https://www.linkedin.com/in/sunilmehta",
+  },
+  {
+    name: "Dr. Sunil Mehta",
+    role: "Placement Officer",
+    image: "/Pillai.png",
+    message:
+      "Training and placement cell of Pillai college of Engineering is the most active and crucial part of college...",
+    linkedin: "https://www.linkedin.com/in/sunilmehta",
+  },
 ];
 
 export default function Team() {
@@ -48,7 +64,7 @@ export default function Team() {
       <div className="w-screen px-4 relative z-10">
 
         {/* Top Spotlight */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-25 blur-[80px] pointer-events-none z-0"></div>
 
         {/* Title */}
         <motion.div
@@ -97,13 +113,17 @@ export default function Team() {
         {/* Faculty Section */}
         {activeTab === "faculty" && (
           <>
-            <div className="absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
+            <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
+              {/* <div className="absolute top-[35%] left-1/8 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
+
+              <div className="absolute top-[65%] left-[100%] transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
+              <div className="absolute top-[85%] left-[100%] transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-10 blur-[100px] pointer-events-none z-0"></div> */}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
               {facultyCoordinators.map((member, index) => (
                 <motion.div
                   key={index}
-                  className="rounded-lg bg-[#05090fdb] shadow-xl p-6 backdrop-blur-sm flex flex-col items-center"
+                  className="rounded-xl bg-gradient-to-br from-gray-900/30 to-gray-800/30  border border-gray-800 shadow-xl p-6 backdrop-blur-sm flex flex-col items-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -154,7 +174,9 @@ export default function Team() {
         {activeTab === "students" && (
           <div className="transition-opacity duration-500 relative z-10">
             <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
+            
 
+             
             <div className="mb-6 flex justify-center items-center gap-6">
               <button
                 onClick={() =>
@@ -187,7 +209,7 @@ export default function Team() {
               {currentStudents.map((member, index) => (
                 <motion.div
                   key={index}
-                  className="rounded-lg bg-gradient-to-br from-gray-900/30 to-gray-800/30 shadow-lg p-4 backdrop-blur-sm flex flex-col items-center"
+                  className="rounded-lg bg-gradient-to-br from-gray-900/30 to-gray-800/30 backdrop-blur-sm  shadow-lg p-4  flex flex-col items-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
