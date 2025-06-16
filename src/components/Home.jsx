@@ -376,12 +376,13 @@ function Home() {
 
 
  {/* {student testimonals} */}
+<section className="relative py-24 w-full bg-black text-white overflow-hidden">
+  {/* Spotlight behind card */}
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-green-500 opacity-30 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-      <section className="py-24 w-full bg-black text-white">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-30 blur-[120px] rounded-full pointer-events-none z-0"></div>
-
+  {/* Header Section */}
   <motion.div
-    className="text-center mb-10"
+    className="relative text-center mb-10 z-10"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
@@ -396,8 +397,12 @@ function Home() {
     </p>
   </motion.div>
 
+  {/* Testimonial Card */}
   <motion.div
-    className={`transition-opacity duration-700 ease-in-out max-w-2xl mx-auto text-center p-8 rounded-lg bg-[#02060e] shadow-lg ${fade ? 'opacity-100' : 'opacity-0'}`}
+    className={`relative transition-opacity duration-700 ease-in-out 
+    w-full max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl 
+    mx-auto text-center p-8 rounded-lg bg-[#02060e] shadow-lg z-10 
+    ${fade ? 'opacity-100' : 'opacity-0'}`}
     key={index}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
@@ -410,18 +415,14 @@ function Home() {
       className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-2 border-green-400"
     />
 
-    {/* Stylized quote block */}
+    {/* Quote */}
     <div className="relative max-w-xl mx-auto px-6 sm:px-12">
-      {/* Opening quote */}
       <span className="text-[#09c35a] text-6xl font-bold leading-none absolute -left-4 -top-6 select-none" style={{ fontFamily: 'Georgia, serif' }}>
         &#8220;
       </span>
-
       <p className="italic text-gray-200 text-xs sm:text-sm leading-relaxed z-10 relative">
         {testimonial.quote}
       </p>
-
-      {/* Closing quote */}
       <span
         className="text-[#09c35a] text-6xl font-bold leading-none absolute -right-4 -bottom-6 select-none"
         style={{ fontFamily: 'Georgia, serif', transform: 'rotate(180deg)' }}
@@ -438,6 +439,7 @@ function Home() {
     </div>
   </motion.div>
 </section>
+
 
     </div>
   );
