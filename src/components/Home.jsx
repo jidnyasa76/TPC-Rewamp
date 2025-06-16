@@ -19,28 +19,28 @@ function Home() {
       name: 'Srushti Jagtap ',
       title: 'Flipkart',
       batch: 'ECS ',
-      image: "/Pillai.png",
+      image: "https://ik.imagekit.io/qftjbjuzg/Srushti%20Jagtap.jpg?updatedAt=1750076753512",
     },
     {
       quote: 'The TPC at PCE transformed my anxious beginning into a confident journey with structured sessions and continuous mentorship.',
       name: 'Sumant Dusane ',
       title: 'Grexa Al PVT LTD',
       batch: 'COMPS',
-      image: "/Pillai.png",
+      image: "https://ik.imagekit.io/qftjbjuzg/sumant%20dusane.heif?updatedAt=1750076753533",
     },
     {
       quote: 'Thanks to TPC-PCE, the transition to the corporate world was smooth with valuable sessions, mentorship, and placement drives.',
       name: 'Sayali Patil',
       title: 'TCS',
       batch: 'COMPS',
-      image: "/Pillai.png",
+      image: "https://ik.imagekit.io/qftjbjuzg/sayli%20patil.jpg?updatedAt=1750076753395",
     },
     {
       quote: 'TPC nurtured my growth with training, support, and consistency, making me industry-ready.',
       name: 'Pranav Rajeevan ',
       title: 'TCS',
       batch: 'IT',
-      image: "/Pillai.png",
+      image: "https://ik.imagekit.io/qftjbjuzg/pranav%20rajeevan.jpg?updatedAt=1750076753116",
     },
   ];
 
@@ -408,12 +408,14 @@ function Home() {
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
   >
-    {/* Student Image */}
-    <img
-      src={testimonial.image}
-      alt={`${testimonial.name} photo`}
-      className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-2 border-green-400"
-    />
+{/* Student Image */}
+<img
+  src={testimonial.image}
+  alt={`${testimonial.name} photo`}
+  className="w-28 h-28 sm:w-32 sm:h-32 rounded-full mx-auto mb-6 object-contain border-2 border-green-400 bg-white"
+/>
+
+
 
     {/* Quote */}
     <div className="relative max-w-xl mx-auto px-6 sm:px-12">
