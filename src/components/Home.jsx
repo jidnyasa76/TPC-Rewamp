@@ -106,7 +106,7 @@ function Home() {
 
       {/* Placement Insights */}
       <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[800px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[800px] bg-green-500 opacity-15 blur-[120px] rounded-full pointer-events-none z-0"></div>
     
 
     <motion.div

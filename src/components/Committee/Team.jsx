@@ -85,30 +85,32 @@ export default function Team() {
         </motion.div>
 
         {/* Tabs */}
-        <div className="mb-8 flex justify-center z-10 relative">
-          <div className="inline-flex rounded-md p-2 backdrop-blur-sm space-x-2">
-            <button
-              onClick={() => setActiveTab("faculty")}
-              className={`rounded-md border-0 px-6 py-2 text-sm md:text-base font-medium transition-colors ${
-                activeTab === "faculty"
-                  ? "bg-green-500 text-white"
-                  : "text-gray-300 hover:bg-gray-900/80 hover:text-white"
-              }`}
-            >
-              Faculty Coordinators
-            </button>
-            <button
-              onClick={() => setActiveTab("students")}
-              className={`rounded-md border-0 px-4 py-2 text-sm md:text-base font-medium transition-colors ${
-                activeTab === "students"
-                  ? "bg-green-500 text-white"
-                  : "text-gray-300 hover:bg-gray-900/80 hover:text-white"
-              }`}
-            >
-              Student Committee
-            </button>
-          </div>
-        </div>
+<div className="mb-8 flex justify-center z-10 relative">
+  <div className="inline-flex w-full max-w-md rounded-md p-2 backdrop-blur-sm space-x-2">
+    <button
+      onClick={() => setActiveTab("faculty")}
+      className={`flex-1 rounded-md border-0 px-4 py-2 text-sm md:text-base font-medium transition-colors ${
+        activeTab === "faculty"
+          ? "bg-green-500 text-white"
+          : "text-gray-300 hover:bg-gray-900/80 hover:text-white"
+      }`}
+    >
+      Faculty Coordinators
+    </button>
+    <button
+  onClick={() => setActiveTab("students")}
+  className={`flex-1 rounded-md border-0 px-4 py-2 text-sm md:text-base font-medium transition-colors ${
+    activeTab === "students"
+      ? "bg-green-500 text-white"
+      : "text-gray-300 hover:bg-gray-900/80 hover:text-white"
+  }`}
+>
+  <span className="block sm:inline">Student</span>
+  <span className="block sm:inline"> Committee</span>
+</button>
+
+  </div>
+</div>
 
         {/* Faculty Section */}
         {activeTab === "faculty" && (
