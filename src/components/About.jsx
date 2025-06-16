@@ -21,7 +21,7 @@ const AboutSection = () => {
     <div id="about" className="py-24 w-screen bg-black overflow-hidden">
       <div className="container mx-auto px-6 relative">
         {/* Spotlight 1 */}
-        <div className="absolute top-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-30 blur-[120px] pointer-events-none z-0"></div>
+        <div className="absolute top-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-40 blur-[120px] pointer-events-none z-0"></div>
 
         {/* About Title */}
         <motion.div
@@ -65,7 +65,7 @@ const AboutSection = () => {
   <div className="w-24 h-1 bg-green-500 mb-6 ml-12"></div>
 </div>
 
-          <p className="text-white font-poppins mb-6 leading-relaxed text-sm sm:text-base text-justify sm:text-center">
+          <p className="text-white font-poppins mb-6 leading-relaxed text-sm sm:text-base sm:text-center" style={{ textAlign: "justify" }}>
   The Training and Placement Committee is to empower students to become industry-ready professionals. We strive to bridge the gap between academia and the corporate world by providing structured training, industry collaboration, and strategic placement opportunities.
 </p>
 

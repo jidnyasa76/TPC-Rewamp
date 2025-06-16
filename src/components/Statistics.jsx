@@ -265,7 +265,7 @@ const Statistics = () => {
     <div className="py-12 md:py-24 w-full bg-black overflow-hidden relative ">
        <div className="w-screen px-4 relative z-10">
       {/* Background glows */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-30 blur-[120px] pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-green-500 opacity-40 blur-[120px] pointer-events-none z-0"></div>
       <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] max-w-[400px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
       <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] max-w-[400px] aspect-square rounded-full bg-green-500 opacity-20 blur-[80px] md:blur-[120px] pointer-events-none"></div>
 
@@ -304,7 +304,7 @@ const Statistics = () => {
                   className="block h-[2px] w-[60px] bg-green-500 mx-auto md:mx-0 mt-3 origin-center"
                 ></motion.span>
               </p>
-              <p className="text-lg sm:text-sm md:text-base text-white/90 leading-relaxed text-justify">
+              <p className="text-base sm:text-sm md:text-base text-white/90 leading-relaxed text-justify">
                 {section.description}
               </p>
             </ScrollAnimatedSection>

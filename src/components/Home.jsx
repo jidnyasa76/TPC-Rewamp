@@ -77,7 +77,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute w-[300px] h-[400px] bg-green-400 blur-[100px] rounded-full opacity-20 mix-blend-screen z-0 pointer-events-none" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+          <div className="absolute w-[400px] h-[300px] bg-green-400 blur-[100px] rounded-full opacity-30 mix-blend-screen z-0 pointer-events-none" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
 
           
 
@@ -106,7 +106,7 @@ function Home() {
 
       {/* Placement Insights */}
       <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-green-500 opacity-10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[800px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
     
 
     <motion.div
@@ -162,7 +162,7 @@ function Home() {
 
       {/* Recruiters Carousel */}
       <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-30 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
         <motion.div
           className="text-center mb-10 relative z-10"
@@ -214,7 +214,7 @@ function Home() {
 {/* Company Testimonials */}
 
 <section className="py-24 w-full bg-black text-white relative overflow-hidden">
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] bg-green-500 opacity-30 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
       <motion.div
         className="text-center mb-10"
@@ -378,7 +378,7 @@ function Home() {
  {/* {student testimonals} */}
 
       <section className="py-24 w-full bg-black text-white">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-30 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
   <motion.div
     className="text-center mb-10"

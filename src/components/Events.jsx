@@ -33,7 +33,7 @@ const EventsSection = () => {
   return (
     <section id="events" className="w-full bg-black py-24 font-poppins relative">
       {/* Glowing background */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-30 blur-[100px] rounded-full z-0 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-green-500 opacity-35 blur-[100px] rounded-full z-0 pointer-events-none" />
       
 
       <div className="w-screen px-4 relative z-10">

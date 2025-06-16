@@ -86,7 +86,7 @@ export default function Team() {
 
         {/* Tabs */}
         <div className="mb-8 flex justify-center z-10 relative">
-          <div className="inline-flex rounded-md p-2 backdrop-blur-sm">
+          <div className="inline-flex rounded-md p-2 backdrop-blur-sm space-x-2">
             <button
               onClick={() => setActiveTab("faculty")}
               className={`rounded-md border-0 px-6 py-2 text-sm md:text-base font-medium transition-colors ${
@@ -113,7 +113,7 @@ export default function Team() {
         {/* Faculty Section */}
         {activeTab === "faculty" && (
           <>
-            <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
+            <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-30 blur-[80px] pointer-events-none z-0"></div>
               {/* <div className="absolute top-[35%] left-1/8 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
 
               <div className="absolute top-[65%] left-[100%] transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[100px] pointer-events-none z-0"></div>
@@ -209,7 +209,7 @@ export default function Team() {
               {currentStudents.map((member, index) => (
                 <motion.div
                   key={index}
-                  className="rounded-lg bg-gradient-to-br from-gray-900/30 to-gray-800/30 backdrop-blur-sm  shadow-lg p-4  flex flex-col items-center"
+                  className="rounded-lg bg-gradient-to-br from-gray-800/30 to-gray-800/30 backdrop-blur-sm  shadow-lg p-4  flex flex-col items-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
