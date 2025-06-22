@@ -29,8 +29,8 @@ function Navbar() {
       {/* MAIN NAVBAR */}
       <nav
         className={`fixed w-screen top-0 z-50 transition-all duration-300 
-          font-poppins px-6 md:px-8 py-4 ${
-            scrolled ? "bg-black/80 backdrop-blur-sm shadow-lg" : "bg-transparent"
+          font-poppins px-6 md:px-8 py-2 ${
+            scrolled ? "bg-black/100 backdrop-blur-sm shadow-lg" : "bg-transparent"
           } ${menuOpen ? "hidden" : "flex items-center justify-between"}`}
       >
         {/* Logo */}

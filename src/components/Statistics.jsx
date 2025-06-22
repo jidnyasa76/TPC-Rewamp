@@ -273,7 +273,7 @@ const Statistics = () => {
       <motion.div className="text-center mb-16 px-4 mt-20 relative z-10" {...fadeInUp}>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold mb-4 text-white drop-shadow-md group inline-block">
           Placement <span className="text-green-500">statistics</span>
-          <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-100 transition-transform duration-300 origin-center mt-2"></span>
+          <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-75 transition-transform duration-300 origin-center mt-2"></span>
         </h2>
         <p className="text-white font-poppins max-w-3xl mx-auto text-sm sm:text-base mt-4">
           Our dedicated team works tirelessly to prepare students for industry challenges and connect them with leading recruiters.
@@ -298,11 +298,11 @@ const Statistics = () => {
                 {section.title.split(" ")[0]}{" "}
                 <span className="text-green-500">{section.title.split(" ")[1]}</span>
                 <motion.span
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="block h-[2px] w-[60px] bg-green-500 mx-auto md:mx-0 mt-3 origin-center"
-                ></motion.span>
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-24 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
               </p>
               <p className="text-base sm:text-sm md:text-base text-white/90 leading-relaxed text-justify">
                 {section.description}

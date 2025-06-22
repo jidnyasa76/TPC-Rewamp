@@ -59,7 +59,7 @@ export default function Placement() {
             variants={fadeInUp}
           >
             Career Excellence <span className="text-green-600">Hub</span>
-            <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-100 transition-transform duration-300 origin-center mt-2"></span>
+            <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-75 transition-transform duration-300 origin-center mt-2"></span>
           </motion.h1>
           <motion.p
             className="text-sm sm:text-base text-white max-w-xl sm:max-w-2xl mx-auto"
@@ -72,22 +72,24 @@ export default function Placement() {
         {/* Tabs Section */}
         <Tabs defaultValue="companies" className="w-full">
           <TabsList className="grid w-full grid-cols-2 sm:grid-cols-2 mb-6 sm:mb-8 max-w-md mx-auto gap-3">
-            <TabsTrigger
-              value="companies"
-              className="data-[state=active]:bg-green-600 data-[state=active]:text-white bg-gray-800 text-gray-300 flex items-center justify-center gap-2 py-2 sm:py-3 border-0 cursor-pointer rounded-full transition-colors duration-300 text-sm sm:text-base"
-            >
-              <Building2 className="w-4 h-4" />
-              Our Recruiters
-            </TabsTrigger>
+  <TabsTrigger
+    value="companies"
+    className="data-[state=active]:bg-green-600 data-[state=active]:text-white bg-gray-800 text-gray-300 flex items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 border-0 cursor-pointer rounded-full transition-colors duration-300 text-sm sm:text-base"
+  >
+    <Building2 className="w-4 h-4 sm:w-5 sm:h-5" />
+    Our Recruiters
+  </TabsTrigger>
 
-            <TabsTrigger
-              value="brochure"
-              className="data-[state=active]:bg-green-600 data-[state=active]:text-white bg-gray-800 text-gray-300 flex items-center justify-center gap-2 py-2 sm:py-3 border-0 cursor-pointer rounded-full transition-colors duration-300 text-sm sm:text-base"
-            >
-              <GraduationCap className="w-4 h-4" />
-              Placement Brochure
-            </TabsTrigger>
-          </TabsList>
+  <TabsTrigger
+    value="brochure"
+    className="data-[state=active]:bg-green-600 data-[state=active]:text-white bg-gray-800 text-gray-300 flex items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 border-0 cursor-pointer rounded-full transition-colors duration-300 text-sm sm:text-base"
+  >
+    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
+    <span className="block sm:hidden">Brochure</span>
+    <span className="hidden sm:block">Placement Brochure</span>
+  </TabsTrigger>
+</TabsList>
+
 
           {/* Recruiters Tab */}
          <TabsContent
@@ -103,6 +105,12 @@ export default function Placement() {
   >
     <h2 className="text-2xl sm:text-3xl font-bold text-green-500 mb-2 sm:mb-4">
       Trusted Industry<span className="text-white"> Partners</span>
+       <motion.span
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+      ></motion.span>
     </h2>
     <p className="text-sm sm:text-base text-white max-w-xl sm:max-w-3xl mx-auto">
       We collaborate with leading companies across various industries to provide exceptional career opportunities for our students
@@ -147,6 +155,12 @@ export default function Placement() {
             >
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4">
                 Placement Brochure <span className="text-green-500">2024-25</span>
+                 <motion.span
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+                ></motion.span>
               </h2>
               <p className="text-sm sm:text-base text-white max-w-xl sm:max-w-3xl mx-auto">
                 Comprehensive guide to our placement process, statistics, and success stories

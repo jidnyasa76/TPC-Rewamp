@@ -28,7 +28,7 @@ export default function Contact() {
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold mb-4 text-white drop-shadow-md group inline-block">
             Get in <span className="text-green-600">Touch</span>
-            <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-100 transition-transform duration-300 origin-center mt-2"></span>
+            <span className="block h-[2px] bg-green-500 scale-x-50 group-hover:scale-x-75 transition-transform duration-300 origin-center mt-2"></span>
           </h1>
         </motion.div>
 
@@ -42,10 +42,19 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h3 className="mb-6 text-2xl font-semibold text-white">
-              Send us a <span className="text-green-500">Message</span>
-              <div className="w-16 h-1 bg-green-500 mb-4"></div>
-            </h3>
+           <div className="text-center md:text-left mb-6">
+  <h3 className="text-2xl font-semibold text-white font-poppins">
+    Send us a <span className="text-green-500">Message</span>
+  </h3>
+
+  <motion.span
+    initial={{ scaleX: 0 }}
+    whileInView={{ scaleX: 1 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto md:ml-0 md:mx-0 rounded-full"
+  ></motion.span>
+</div>
+
             <form className="space-y-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
@@ -81,10 +90,19 @@ export default function Contact() {
             <div>
      
 
-              <h3 className="mb-6 text-2xl font-semibold text-white">
-                Contact <span className="text-green-500">Information</span>
-                <div className="w-16 h-1 bg-green-500 mb-4"></div>
-              </h3>
+             <div className="text-center md:text-left mb-6">
+  <h3 className="text-2xl font-semibold text-white font-poppins">
+    Contact <span className="text-green-500">Information</span>
+  </h3>
+
+  <motion.span
+    initial={{ scaleX: 0 }}
+    whileInView={{ scaleX: 1 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto md:mx-0 md:ml-0 rounded-full"
+  ></motion.span>
+</div>
+
               <p className="mb-8 text-gray-300">
                 Have questions about our placement process or want to recruit from our institution?
                 Reach out to us using the contact information below.

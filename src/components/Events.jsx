@@ -47,9 +47,14 @@ const EventsSection = () => {
 
         {/* Featured Highlights Heading */}
         <motion.div className="text-center mb-10" {...fadeIn(0.1)}>
-          <h3 className="text-2xl font-semibold text-white inline-block relative pb-2">
+          <h3 className="text-2xl font-semibold text-white inline-block relative pb-2 group">
             Featured <span className="text-green-500">Highlights</span>
-            <span className="block h-[2px] bg-green-500 mt-2 mx-auto w-[80%]"></span>
+             <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
           </h3>
         </motion.div>
 
@@ -80,9 +85,14 @@ const EventsSection = () => {
 
         {/* Yearly Events Heading */}
         <motion.div className="text-center mb-10" {...fadeIn(0.2)}>
-          <h3 className="text-2xl font-semibold text-white inline-block relative pb-2">
+          <h3 className="text-2xl font-semibold text-white inline-block relative pb-2 group">
             Events by <span className="text-green-500">Year</span>
-            <span className="block h-[2px] bg-green-500 mt-2 mx-auto w-[80%]"></span>
+             <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
           </h3>
         </motion.div>
 

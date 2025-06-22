@@ -1,6 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import studentCommitteeData from "./StudentData";
+
+
+
 
 const facultyCoordinators = [
   {
@@ -54,13 +58,34 @@ const facultyCoordinators = [
 ];
 
 export default function Team() {
+
+
   const [activeTab, setActiveTab] = useState("faculty");
   const [selectedYear, setSelectedYear] = useState("2025");
+  const location = useLocation();
+  const topRef = useRef(null);
+
+useEffect(() => {
+    if (location.state?.tab === "students") {
+      setActiveTab("students");
+    } else if (location.state?.tab === "faculty") {
+      setActiveTab("faculty");
+    }
+
+    // Smooth scroll to top of section
+    setTimeout(() => {
+      topRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }, [location]);
+
+
+
+  
 
   const currentStudents = studentCommitteeData[selectedYear];
 
   return (
-    <section className="w-full bg-black overflow-hidden py-20 relative">
+    <section ref={topRef} className="w-full bg-black overflow-hidden py-20 relative">
       <div className="w-screen px-4 relative z-10">
 
         {/* Top Spotlight */}
@@ -113,6 +138,7 @@ export default function Team() {
 </div>
 
         {/* Faculty Section */}
+      
         {activeTab === "faculty" && (
           <>
             <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-30 blur-[80px] pointer-events-none z-0"></div>
@@ -171,8 +197,9 @@ export default function Team() {
             </div>
           </>
         )}
-
+     
         {/* Student Section */}
+     
         {activeTab === "students" && (
           <div className="transition-opacity duration-500 relative z-10">
             <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-green-500 opacity-20 blur-[80px] pointer-events-none z-0"></div>
@@ -186,8 +213,8 @@ export default function Team() {
                     Math.max(2018, parseInt(prev) - 1).toString()
                   )
                 }
-                disabled={selectedYear === "2018"}
-                className="w-14 h-14 rounded-full bg-black text-green-500 text-2xl flex items-center justify-center hover:bg-gray-900 disabled:opacity-50"
+                disabled={selectedYear === "2019"}
+                className="w-14 h-14 rounded-full bg-gray-800 text-green-500 text-2xl flex items-center justify-center hover:bg-gray-700 disabled:opacity-50"
               >
                 &lt;
               </button>
@@ -207,28 +234,30 @@ export default function Team() {
               </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
+
               {currentStudents.map((member, index) => (
                 <motion.div
                   key={index}
                   className="rounded-lg bg-gradient-to-br from-gray-800/30 to-gray-800/30 backdrop-blur-sm  shadow-lg p-4  flex flex-col items-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
+                  viewport={{  amount: 0.2 }}
                   transition={{
                     duration: 0.4,
                     delay: Math.min(index * 0.07, 0.4),
                   }}
                   whileHover={{ scale: 0.97 }}
                 >
-                  <div className="w-64 h-74 overflow-hidden rounded-lg mb-4">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      loading="lazy"
-                      className="object-contain object-center w-full h-full"
-                    />
-                  </div>
+                  <div className="w-full h-full aspect-[3/4] overflow-hidden rounded-lg mb-4 bg-gray-900">
+  <img
+    src={member.image}
+    alt={member.name}
+    loading="lazy"
+    className="w-full h-full object-cover object-center  min-w-full"
+  />
+</div>
+
                   <h3 className="text-lg font-semibold text-white text-center">
                     {member.name}
                   </h3>
@@ -247,8 +276,10 @@ export default function Team() {
               ))}
             </div>
           </div>
+          
         )}
       </div>
+    
     </section>
   );
 }

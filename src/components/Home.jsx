@@ -65,11 +65,12 @@ function Home() {
   return (
     <div className="w-screen font-poppins overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center">
+      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+
         <img
           src="https://ik.imagekit.io/nifjlz5x5/Pillai.png?updatedAt=1748357579939"
           alt="College"
-          className="w-full h-full object-cover absolute z-0"
+          className="absolute top-[-8px] left-0 w-full h-full object-cover z-0"
         />
         <motion.div
           className="absolute inset-0 bg-black/70 z-10 flex flex-col items-center justify-center px-4 text-center"
@@ -117,9 +118,14 @@ function Home() {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-2xl sm:text-4xl font-bold mt-6 mb-6 relative inline-block">
+      <h2 className="text-2xl sm:text-4xl font-bold mt-6 mb-6 relative inline-block group">
         Placement <span className="text-green-500">Insights</span>
-        <span className="block h-[3px] bg-green-500 mt-2 w-1/3 mx-auto rounded-full"></span>
+         <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
       </h2>
          
 
@@ -171,9 +177,14 @@ function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl sm:text-4xl font-bold">
+          <h2 className="text-2xl sm:text-4xl font-bold mt-6 mb-6 relative inline-block group">
             Top <span className="text-green-400">Recruiters</span>
-            <span className="block h-[3px] bg-green-500 mt-2 w-10 mx-auto rounded-full"></span>
+            <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-16 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
           </h2>
           <p className="text-sm sm:text-base mt-4 max-w-2xl mx-auto">
             We partner with leading companies across various industries to provide excellent career opportunities for our students.
@@ -223,9 +234,14 @@ function Home() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl sm:text-4xl font-semibold">
+        <h2 className="text-2xl sm:text-4xl font-bold mt-6 mb-6 relative inline-block group">
           Companies <span className="text-green-400">Testimonials</span>
-          <span className="block h-[3px] bg-green-500 mt-2 w-20 mx-auto rounded-full"></span>
+           <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-28 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
         </h2>
         <p className="text-sm sm:text-base mt-4 max-w-2xl mx-auto">
           See what our recruiting partners say about our talented students.
@@ -388,9 +404,14 @@ function Home() {
     transition={{ duration: 0.8 }}
     viewport={{ once: true }}
   >
-    <h2 className="text-2xl sm:text-4xl font-semibold">
+    <h2 className="text-2xl sm:text-4xl font-bold mt-6 mb-6 relative inline-block group">
       Student <span className="text-green-400">Testimonials</span>
-      <span className="block h-[3px] bg-green-500 mt-2 w-20 mx-auto rounded-full"></span>
+       <motion.span
+  initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="block h-[2px] w-28 bg-green-500 mt-2 origin-center mx-auto rounded-full"
+></motion.span>
     </h2>
     <p className="text-sm sm:text-base mt-4 max-w-2xl mx-auto">
       Hear what our students have to say about their placement experience with us.

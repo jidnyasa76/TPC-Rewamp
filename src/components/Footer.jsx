@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'; // ✅ New
 
 const Footer = () => {
   return (
     <footer className="bg-black w-full font-poppins text-white py-12 px-6 overflow-hidden">
-      
       {/* Gradient Line */}
       <motion.div
         className="h-[1px] w-full mb-8 bg-gradient-to-r from-transparent via-white to-transparent"
@@ -22,11 +22,7 @@ const Footer = () => {
       >
         {/* Logo */}
         <motion.div className="flex sm:block justify-center">
-          <img
-            src="/TPCLogo.svg"
-            alt="TPC PCE Logo"
-            className="w-32 mb-4"
-          />
+          <img src="/TPCLogo.svg" alt="TPC PCE Logo" className="w-32 mb-4" />
         </motion.div>
 
         {/* Links */}
@@ -46,24 +42,32 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Team */}
+        {/* ✅ Team Section */}
         <div className="text-center md:text-left">
           <h3 className="text-white text-lg font-medium mb-3 underline underline-offset-4">Team</h3>
           <ul className="text-gray-400 text-base space-y-2">
-            {["Committee", "Faculty"].map((text, i) => (
-              <motion.li key={i}>
-                <NavLink
-                  to="/team"
-                  className="text-white/60 hover:text-white hover:underline hover:decoration-green-500 hover:underline-offset-4"
-                >
-                  {text}
-                </NavLink>
-              </motion.li>
-            ))}
-          </ul>
+  <li>
+    <NavLink
+      to="/team"
+      state={{ tab: "students" }}
+      className="text-white/60 hover:text-white hover:underline hover:decoration-green-500 hover:underline-offset-4"
+    >
+      Committee
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to="/team"
+      state={{ tab: "faculty" }}
+      className="text-white/60 hover:text-white hover:underline hover:decoration-green-500 hover:underline-offset-4"
+    >
+      Faculty
+    </NavLink>
+  </li>
+</ul>
         </div>
 
-        {/* Other Services */}
+        {/* Other services */}
         <div className="text-center md:text-left">
           <h3 className="text-white text-lg font-medium mb-3 underline underline-offset-4">Other services</h3>
           <ul className="text-gray-400 text-base space-y-2">
@@ -86,7 +90,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact & Social Icons */}
+        {/* Contact & Social */}
         <div className="text-center md:text-left">
           <h3 className="text-white text-lg font-medium mb-3 underline underline-offset-4">Contact</h3>
           <ul className="text-white/60 text-base space-y-2 mb-4">
@@ -95,31 +99,15 @@ const Footer = () => {
             <li>studenttpc@mes.ac.in</li>
           </ul>
 
-          {/* Social Icons */}
           <div className="flex justify-center md:justify-start space-x-6">
-            <motion.a
-              href="https://www.instagram.com/tpc.pce/"
-              transition={{ type: "spring", stiffness: 300 }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-instagram text-3xl" style={{ color: '#df2020' }}></i>
+            <motion.a href="https://www.instagram.com/tpc.pce/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-instagram text-3xl text-[#df2020] hover:text-green-500 transition-colors duration-300"></i>
             </motion.a>
-            <motion.a
-              href="https://www.facebook.com/tpc.pce"
-              transition={{ type: "spring", stiffness: 300 }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-facebook text-3xl" style={{ color: '#125bd9' }}></i>
+            <motion.a href="https://www.facebook.com/tpc.pce" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-facebook text-3xl text-[#125bd9] hover:text-green-500 transition-colors duration-300"></i>
             </motion.a>
-            <motion.a
-              href="https://www.linkedin.com/company/tpc-pce"
-              transition={{ type: "spring", stiffness: 300 }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-linkedin text-3xl" style={{ color: '#206497' }}></i>
+            <motion.a href="https://www.linkedin.com/company/tpc-pce" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-linkedin text-3xl text-[#206497] hover:text-green-500 transition-colors duration-300"></i>
             </motion.a>
           </div>
         </div>
